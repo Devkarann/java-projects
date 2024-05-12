@@ -1,0 +1,12 @@
+package question_8;
+
+import java.time.LocalDate;
+
+public class Stock {
+	private String id;
+	private String name;
+	private String companyName;
+	private double price;
+	private LocalDate date;
+	private int quan;
+}

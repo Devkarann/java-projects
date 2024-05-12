@@ -1,0 +1,7 @@
+package question_1;
+
+public class findMyAccount {
+	public static PenAccount findPen(String s, PenAccount<Integer, PenAccount> stockList) {
+		
+	}
+}

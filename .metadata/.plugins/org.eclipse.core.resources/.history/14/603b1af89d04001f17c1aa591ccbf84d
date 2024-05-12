@@ -1,0 +1,16 @@
+package question_6;
+
+import java.util.Map;
+
+public class findMyAccount {
+
+	public static Employee findAadhar(String aadhar, Map<Integer, Employee> empList) {
+		
+		Employee e = empList.get(aadhar);
+		if(e == null) {
+			return e;
+		}
+		
+	}
+
+}

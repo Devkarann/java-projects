@@ -1,0 +1,9 @@
+package question_6;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class tester {
+	Map<Integer, Employee> empList = new HashMap<>();
+	
+}

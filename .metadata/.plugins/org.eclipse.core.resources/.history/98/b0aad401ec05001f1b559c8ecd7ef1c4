@@ -1,0 +1,10 @@
+package lab;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class mobile {
+	public static void main(String[] args) {
+		List<Phone> phoneList = new ArrayList<>(); 
+	}
+}

@@ -1,0 +1,56 @@
+package customer.management;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		ArrayList <Customer> customerList = new ArrayList<>();
+		boolean exit = false;
+		
+		try(Scanner sc = new Scanner(System.in)){
+			while(!exit) {
+				System.out.println("Enter 1 for sign up customer");
+				System.out.println("Enter 2 for diplaying the customer");
+				System.out.println("Enter 3 for sign in into email");
+				
+				switch(sc.nextInt()) {
+				case 1:
+					System.out.println("first name, last name, email, password, amount, date(yyyy-mm-dd), Service-type");
+					Customer c =  Validation.validateAll(sc.next(),sc.next(),sc.next(), sc.next(), sc.nextDouble() ,sc.next(),sc.next());
+					customerList.add(c);
+					System.out.println("Succesfully signed up");
+					break;
+				case 2:
+					for(Customer c1: customerList) {
+						System.out.println(c1);
+					}
+					break;
+					
+				case 3:
+					System.out.println("Enter email id and password");
+					String mail = sc.next();
+					String pass = sc.next();
+					Customer check = Checking.checkingMail(mail, customerList);
+					if(check.getPassword().equals(pass)) {
+						System.out.println("Login Succesfully");
+					}
+					else {
+						System.out.println("password is not mathcing");
+					}
+					
+					
+				}
+				
+			}
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+
+	}
+
+	
+
+}

@@ -1,0 +1,48 @@
+package question_5;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Tester {
+	public static void main(String[] args) {
+		Map<Integer, Pet> petList  = new HashMap<>();
+		 Pet p1  = new HashMap<>(1, "bull dog" , DOG, 20000,10);
+		petList.put(p1.getPetId(), p1);
+		
+		
+		
+		Map<Integer, Order> orderList = new HashMap<>();
+		Map<String, CustomerLogin> customerLoginList = new HashMap<>();
+		Scanner sc = new Scanner(System.in);
+		
+		boolean check = false;
+		while(!check) {
+			try {
+				System.out.println("Enter 1 for add petList");
+				System.out.println("Enter 2 for Order the pet");
+				System.out.println("");
+				switch(sc.nextInt()) {
+				//int petId, String name, Category categoryType, double unitPrice, int stock
+				case 1:
+					Pet p = validation.validateAll(sc.nextInt(), sc.next(), sc.next(), sc.nextDouble(), sc.nextInt());
+					petList.put(p.getPetId(), p);
+					System.out.println("Pet added succesfully");
+					break;
+					
+				case 3:
+					for(Pet pet: petList.values()) {
+						System.out.println(pet);
+					}
+					break;
+				}
+			}catch(Exception e) {
+				System.out.println(e);
+			}
+			
+		}
+		
+		
+		
+	}
+}

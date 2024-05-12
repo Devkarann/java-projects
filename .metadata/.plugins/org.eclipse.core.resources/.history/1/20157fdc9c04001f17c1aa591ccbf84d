@@ -1,0 +1,11 @@
+package question_6;
+
+public class validation {
+
+	public static Employee validationAll(String next, String next2, String next3, String next4, String next5,
+			double nextDouble, double nextDouble2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

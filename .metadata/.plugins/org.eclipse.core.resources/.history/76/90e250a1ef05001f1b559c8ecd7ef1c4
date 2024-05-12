@@ -1,0 +1,11 @@
+package lab;
+
+import java.util.List;
+
+public class validation {
+	public static Phone validateAll(List<Phone>phone , String name, String date , String email, Map<String, Phone> ) {
+		validateNumber(phone,  )
+		
+		return null;
+	}
+}

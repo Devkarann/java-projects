@@ -1,0 +1,12 @@
+package question_8;
+
+public class validation {
+
+	public static Stock validateAll(String id, String name, String companyName, double price, String date,	double quantity) {
+		
+		
+		
+		return null;
+	}
+
+}

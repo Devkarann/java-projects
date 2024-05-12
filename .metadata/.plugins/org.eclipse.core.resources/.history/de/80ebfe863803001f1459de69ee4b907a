@@ -1,0 +1,12 @@
+package question_1;
+
+import java.util.Map;
+
+public class findMyAccount {
+	public static PenAccount findPen(String str, Map<Integer, PenAccount> stockList)throws ErrorMain {
+		PenAccount a = stockList.get(str);
+		if(a==null) {
+			return throw new("invalid name");
+		}
+	}
+}

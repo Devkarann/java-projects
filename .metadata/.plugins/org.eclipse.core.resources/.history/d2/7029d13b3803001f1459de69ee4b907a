@@ -1,0 +1,9 @@
+package question_1;
+
+import java.util.Map;
+
+public class findMyAccount {
+	public static PenAccount findPen(String s, Map<Integer, PenAccount> stockList) {
+		
+	}
+}

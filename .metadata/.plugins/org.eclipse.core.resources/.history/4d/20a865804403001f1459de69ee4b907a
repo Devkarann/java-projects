@@ -1,0 +1,90 @@
+package question_1;
+
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Pentester {
+
+	public static void main(String [] args) {
+		
+		Map<Integer, PenAccount> stockList = new HashMap<>();
+		PenAccount s = new PenAccount("cello", "black", "blue", Material.METAL, 200, LocalDate.of(2003,5,1), 40, 0.0);
+		stockList.put(s.getId(),s);
+		PenAccount s2 = new PenAccount("link", "black", "blue", Material.STEEL, 400, LocalDate.of(2024,2,1), 60, 0.0);
+		stockList.put(s2.getId(),s2);
+		boolean check = false;
+		Scanner sc = new Scanner(System.in);
+		
+		//LocalDate d = LocalDate.of(stockList.getUpdateDate()).minus(3, ChronoUnit.MONTHS);
+		
+		while(!false) {
+			try {
+				System.out.println("Enter 1 for adding pen stock");
+				System.out.println("Enter 2 for displaying the penStock");
+				System.out.println("Enter 3 for updating the pen stock");
+				System.out.println("Enter 5 for removing the pen stock by checking the date");
+				
+				
+				System.out.println("Enter 0 for exit");
+				switch(sc.nextInt()) {
+					case 1:
+						 PenAccount p = validation.validateAll( sc.next(), sc.next(), sc.next(), sc.next(), sc.nextInt(),
+								 sc.next(), sc.nextDouble(), sc.nextDouble()); 
+						 stockList.put(p.getId() ,p);
+						 System.out.println("Pen Stock added succesfully");
+						
+						break;
+					case 2:
+						stockList.values().stream().forEach(pr -> System.out.println(pr));
+						break;
+						
+					case 3:
+						System.out.println("Enter id of the pen for updating ");
+						PenAccount find = findMyAccount.findPen(sc.nextInt(), stockList);
+						System.out.println("Enter stock , color, discount you have to change");
+						int cStock = sc.nextInt();
+						String cColor = sc.next();
+						double cDis = sc.nextDouble();
+						find.setAvailStock(cStock);
+						find.setColor(cColor);
+						find.setDiscount(cDis);
+						find.setUpdateDate(LocalDate.now());
+						System.out.println("updated!!!!");
+						break;
+						
+					case 4:
+						LocalDate expired3 = LocalDate.now().minus(3, ChronoUnit.MONTHS);
+						for(PenAccount a: stockList.values()) {
+							if(a.getListingDate().isBefore(expired3)) {
+								a.setDiscount(2);
+								a.getPrice((a.getPrice()*a.getDiscount())/100);
+							System.out.println("PEn stock delted successfully!!!");
+							}
+						}
+						
+						
+					case 5:
+						LocalDate expired = LocalDate.now().minus(9, ChronoUnit.MONTHS);
+						stockList.values().stream().filter(i-> (i.getListingDate().isBefore(expired).forEach(i -> ) );
+//						for(PenAccount a: stockList.values()) {
+//							if(a.getListingDate().isBefore(expired)) {
+//								stockList.remove(a.getId(),a);
+//								System.out.println("PEn stock delted successfully!!!");
+//							}
+//						}
+				}
+			}catch(Exception e) {
+				System.out.println(e);
+			}
+			
+			
+		}
+		
+	}
+
+	
+	
+}

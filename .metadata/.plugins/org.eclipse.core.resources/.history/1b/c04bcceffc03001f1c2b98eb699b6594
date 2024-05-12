@@ -1,0 +1,20 @@
+package question_5;
+
+public class validation {
+	public static Pet validateAll(int petId, String name, String categoryType, double unitPrice, int stock) throws ErrorMain {
+		
+	Category cType = validateType(categoryType);
+		
+		
+		return null;
+	}
+	
+	public Category validateType(String type) {
+		return Category.valueOf(type.toUpperCase());
+	}
+	public void validateStock(int stock)throws ErrorMain {
+		if(stock < 0) {
+		throw new ErrorMain("stock is over"); 
+		}
+	}
+}

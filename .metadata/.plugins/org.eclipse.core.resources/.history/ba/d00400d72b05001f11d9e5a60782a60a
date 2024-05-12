@@ -1,0 +1,16 @@
+package question_8;
+
+import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Map<String, Stock> stockList = new HashMap<>();
+		Stock s1 = new Stock("xyz", "rpower", "reliance" , 200, LocalDate.parse("2025-05-06"), 1000);
+		
+
+	}
+
+}

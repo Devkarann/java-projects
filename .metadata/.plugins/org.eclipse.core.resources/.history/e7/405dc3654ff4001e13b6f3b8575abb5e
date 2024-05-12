@@ -1,0 +1,9 @@
+package fruit.details;
+
+public class Fruit {
+	private String color;
+	private double weight;
+	private String name;
+	private boolean fresh;
+	
+}

@@ -1,0 +1,35 @@
+package question_5;
+
+public class Order {
+	
+	private static int oId;
+	static {
+		oId = 1;
+	}
+	private  int orderId;
+	private int petId;
+	private int quantity;
+	private Status statusType;
+	
+	public Order(int petId, int quantity, Status statusType) {
+		super();
+		this.orderId = oId;
+		this.petId = petId;
+		this.quantity = quantity;
+		this.statusType = statusType;
+		oId++;
+	}
+
+	@Override
+	public String toString() {
+		return "Order [orderId=" + orderId + ", petId=" + petId + ", quantity=" + quantity + ", statusType="
+				+ statusType + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+}

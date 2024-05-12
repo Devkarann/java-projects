@@ -1,0 +1,15 @@
+package question_5;
+
+public class validation {
+	public static Pet validateAll(int petId, String name, String categoryType, double unitPrice, int stock) throws ErrorMain {
+		
+	Category cType = validateType(categoryType);
+		
+		
+		return null;
+	}
+	
+	public Category validateType(String type) {
+		return Category.valueOf(type.toUpperCase());
+	}
+}

@@ -1,0 +1,15 @@
+package question_5;
+
+import java.util.Map;
+
+public class findMyAccount {
+	public static Pet findEmail(String email , Map<Integer, Pet>petList)throws ErrorMain {
+		
+		Pet pet1 = petList.get(email);
+		if(pet1 == null) {
+			 throw new ErrorMain("Email is invalid");
+		}
+		
+		return pet1;
+	}
+}

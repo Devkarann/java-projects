@@ -1,0 +1,20 @@
+package customer.management;
+
+import java.util.ArrayList;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		ArrayList <Customer> customerList = new ArrayList<>();
+		boolean exit = false;
+		while(!exit) {
+			System.out.println("Enter 1 for sign up customer");
+			
+			switch() {
+			
+			}
+		}
+
+	}
+
+}

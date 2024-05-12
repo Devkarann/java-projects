@@ -1,0 +1,35 @@
+package question_6;
+import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class tester {
+	
+	public static void main(String[] args) {
+		Map<Integer, Employee> empList = new HashMap<>();
+		Scanner sc = new Scanner(System.in);
+		
+		boolean check = false;
+		while(!check) {
+			try {
+				System.out.println("Enter 1 for adding permanent employee");
+				System.out.println("Enter 2 for adding hourly based employee");
+				
+				switch(sc.nextInt()) {
+				
+				case 1:
+					System.out.println("Enter  name, date,  phone,  number,  aadhaar,  monthSalary, hourSalary in case permanent emp put 0 in hoursalary");
+					Employee e = validation.validationAll(sc.next(), sc.next(), sc.next(),sc.next(),sc.next(),sc.nextDouble(),sc.nextDouble() );
+					break;
+				
+				}
+			}catch(Exception e) {
+				System.out.println(e);
+			}
+		}
+	}
+	
+	
+	
+}

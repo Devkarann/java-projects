@@ -1,0 +1,28 @@
+package lab;
+
+import java.time.LocalDate;
+
+public class Phone {
+	private List<mobile> mobileNumber;
+	private String name;
+	private LocalDate date;
+	private String email;
+	
+	public Phone(String number, String name, LocalDate date, String email) {
+		super();
+		
+		this.name = name;
+		this.date = date;
+		this.email = email;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

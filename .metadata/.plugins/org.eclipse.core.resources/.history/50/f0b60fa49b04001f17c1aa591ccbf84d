@@ -1,0 +1,23 @@
+package question_6;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class tester {
+	Map<Integer, Employee> empList = new HashMap<>();
+	Scanner sc = new Scanner(System.in);
+	
+	boolean check = false;
+	while(!check) {
+		try {
+			switch() {
+			
+			}
+		}catch() {
+			
+		}
+	}
+	
+	
+}

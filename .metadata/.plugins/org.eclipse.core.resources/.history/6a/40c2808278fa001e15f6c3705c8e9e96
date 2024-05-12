@@ -1,0 +1,15 @@
+package customer.management;
+
+import java.time.LocalDate;
+
+public class Validation{
+	public Serviceplan validateAll(String firstName, String lastName, String email, String password,
+			String registrationAmount, String date, String sType) throws ErrorMain {
+		
+		
+		return new (firstName,  lastName,  email, password,
+			registrationAmount, LocalDate.parse( date),  sType);
+		
+	}
+	
+}

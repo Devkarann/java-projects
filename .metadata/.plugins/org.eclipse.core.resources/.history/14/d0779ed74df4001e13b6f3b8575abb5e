@@ -1,0 +1,7 @@
+package fruit.details;
+
+public class Fruit {
+	public void display() {
+		System.out.println("heloo...");
+	}
+}

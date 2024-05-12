@@ -1,0 +1,32 @@
+package lab;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class mobile {
+	public static void main(String[] args) {
+		List<Phone> phoneList = new ArrayList<>(); 
+		Scanner sc = new Scanner(System.in);
+		boolean check = false;
+		while(!false) {
+			System.out.println("Enter 1 for adding the phone number");
+			switch(sc.nextInt()) {
+			
+			case 1:
+				
+				System.out.println("Enter how many number you want to store");
+				int size = sc.nextInt();
+				List<String> number= new ArrayList<>();
+				for(int i=0; i<size; i++) {
+					String num = sc.next();
+					number.findMyAccount.findNumber();
+					number.add(num);
+				}
+				break;
+			
+			}
+		}
+				
+	}
+}

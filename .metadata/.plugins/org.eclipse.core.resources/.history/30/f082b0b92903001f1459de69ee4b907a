@@ -1,0 +1,20 @@
+package question_1;
+
+import java.time.LocalDate;
+
+public class PenAccount {
+	
+	private int id;
+	private String brand;
+	private String color;
+	private String inkcolor;
+	private Material materialType;
+	private int availStock;
+	private LocalDate updateDate;
+	private LocalDate ListingDate;
+	private double price;
+	private double discount;
+		
+		
+	
+}

@@ -1,0 +1,33 @@
+package question_6;
+
+import java.time.LocalDate;
+
+public class Employee {
+	private static int cId;
+	static {
+		cId  =1;
+	}
+	private int id;
+	private String name;
+	private LocalDate date;
+	private String phone;
+	private String number; 
+	private String Aadhaar;
+	private double monthSalary;
+	private double hourSalary;
+	public Employee(String name, LocalDate date, String phone, String number, String aadhaar, double monthSalary,
+			double hourSalary) {
+		super();
+		this.id = cId;
+		this.name = name;
+		this.date = date;
+		this.phone = phone;
+		this.number = number;
+		Aadhaar = aadhaar;
+		this.monthSalary = monthSalary;
+		this.hourSalary = hourSalary;
+		cId++;
+	}
+	
+	
+}

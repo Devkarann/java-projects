@@ -1,0 +1,85 @@
+package fruit.details;
+import java.util.*;
+
+public class Tester {
+
+
+	
+
+	public static void main(String[] args) {
+		System.out.println("Enter how many fruit you want to take as size ?");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		Fruit[] FruitBasket = new Fruit[n];
+		boolean exit = false;
+		int counter = 0;
+		int index = 0;
+		
+		while(!exit) {
+			System.out.println("Enter 1 for add mango");
+			System.out.println("Enter 2 for add Orange");
+			System.out.println("Enter 3 for add Apple");
+			System.out.println("Enter 0 for exit");
+			
+			System.out.println("Enter your choice");
+			int choice = sc.nextInt();
+			switch(choice) {
+			case 1:
+				
+				
+				if(counter < FruitBasket.length) {
+				System.out.println("Enter the details color, weight, name , true/false");
+				FruitBasket[counter] = new Mango(sc.next(), sc.nextInt(), sc.next(), sc.nextBoolean());
+				counter++;
+				break;
+				}
+				
+			case 2:
+			
+				if(counter < FruitBasket.length) {
+					System.out.println("Enter the details color, weight, name , true/false");
+					FruitBasket[counter] = new Orange(sc.next(), sc.nextInt(), sc.next(), sc.nextBoolean());
+					counter++;
+					break;
+		        }
+				
+			case 3:
+				if(counter < FruitBasket.length) {
+					System.out.println("Enter the details color, weight, name , true/false");
+					FruitBasket[counter] = new Apple(sc.next(), sc.nextInt(), sc.next(), sc.nextBoolean());
+					counter++;	
+					break;
+		        }
+				
+			case 5:
+				
+					for(int i =0; i<counter; i++) {
+						Fruit f = FruitBasket[index];
+						if( f instanceof Mango) {
+							((Mango)f).taste();
+						}
+						else if(f instanceof Apple) {
+							((Apple)f).taste();
+						}
+						else if(f instanceof Orange) {
+							((Orange)f).taste();
+						}
+					}
+					
+					
+				
+				
+			case 0:
+				exit = true;
+				break;
+				
+				
+			}
+			
+			
+		
+	}
+
+  }
+}

@@ -1,0 +1,45 @@
+package question_1;
+
+import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Pentester {
+
+	public static void main(String [] args) {
+		
+		Map<Integer, PenAccount> stockList = new HashMap<>();
+		PenAccount s = new PenAccount("cello", "black", "blue", Material.METAL, 200, LocalDate.parse("2003-05-1"), "2003-05-1", 40.0, 6.0);
+		
+		boolean check = false;
+		Scanner sc = new Scanner(System.in);
+		
+		
+		while(!false) {
+			try {
+				System.out.println("Enter 1 for adding pen stock");
+				System.out.println("Enter 0 for exit");
+				switch(sc.nextInt()) {
+					case 1:
+						 PenAccount p = validation.validateAll( sc.next(), sc.next(), sc.next(), sc.next(), sc.nextInt(), sc.next(),
+								 sc.next(), sc.nextDouble(), sc.nextDouble()); 
+						 stockList.put(p.getId() ,p);
+						 System.out.println("Pen Stock added succesfully");
+						
+						break;
+					case 2:
+						stockList.values().stream().forEach(pr -> System.out.println(pr));
+						break;
+					
+				}
+			}catch(Exception e) {
+				System.out.println(e);
+			}
+			
+			
+		}
+		
+	}
+	
+}

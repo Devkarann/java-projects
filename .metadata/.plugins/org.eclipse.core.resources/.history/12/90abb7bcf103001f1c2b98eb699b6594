@@ -1,0 +1,7 @@
+package question_1;
+
+public class AdminLogin {
+	private String emailId = "sdevkaran012@gmail.com";
+	private String password = "0000@@@@";
+	
+}

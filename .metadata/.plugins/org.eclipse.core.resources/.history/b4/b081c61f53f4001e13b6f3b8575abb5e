@@ -1,0 +1,12 @@
+package fruit.details;
+
+
+public class Tester {
+
+
+	public static void main(String[] args) {
+		Fruit FruitBasket = new Mango("Mango", 200, "yellow", false);
+		System.out.println(FruitBasket.toString());
+	}
+
+}

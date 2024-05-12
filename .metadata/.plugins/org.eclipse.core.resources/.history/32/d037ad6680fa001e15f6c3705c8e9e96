@@ -1,0 +1,14 @@
+package customer.management;
+
+import java.util.ArrayList;
+
+public class Checking {
+	private static Customer checkingMail(String mail, ArrayList<Customer> customerList)throws ErrorMain {
+		Customer c= new Customer(mail);
+		int index = customerList.indexOf(c);\
+		if(index == -1) {
+			throw new ErrorMain("Invalid mail id"); 
+		}
+		return null;
+	}
+}

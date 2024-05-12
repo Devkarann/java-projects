@@ -1,0 +1,38 @@
+package customer.management;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		ArrayList <Customer> customerList = new ArrayList<>();
+		boolean exit = false;
+		
+		try(Scanner sc = new Scanner(System.in)){
+			while(!exit) {
+				System.out.println("Enter 1 for sign up customer");
+				System.out.println("Enter 2 for diplaying the customer");
+				
+				switch(sc.nextInt()) {
+				case 1:
+					System.out.println("first name, last name, email, password, amount, date(yyyy-mm-dd), Service-type");
+					Customer c =  Validation.validateAll(sc.next(),sc.next(),sc.next(), sc.next(), sc.nextDouble() ,sc.next(),sc.next());
+					customerList.add(c);
+					break;
+				case 2:
+					for(Customer c1: customerList) {
+						System.out.println(c1);
+					}
+					
+				}
+				
+			}
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+
+	}
+
+}

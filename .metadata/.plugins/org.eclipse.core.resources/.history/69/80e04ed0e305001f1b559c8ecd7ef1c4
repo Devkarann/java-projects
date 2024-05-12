@@ -1,0 +1,62 @@
+package com.entity;
+
+public class Contact {
+
+	private String number;
+	private String name;
+	private String dateOfBirth;
+	private String email;
+
+	public Contact(String number, String name, String dateOfBirth, String email) {
+		super();
+		this.number = number;
+		this.name = name;
+		this.dateOfBirth = dateOfBirth;
+		this.email = email;
+	}
+
+	public Contact() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getNumber() {
+		return number;
+	}
+
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	public void setDateOfBirth(String dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "Contact [number=" + number + ", name=" + name + ", dateOfBirth=" + dateOfBirth + ", email=" + email
+				+ "]";
+	}
+
+}
+//.matches("^[0-9]{10}$")

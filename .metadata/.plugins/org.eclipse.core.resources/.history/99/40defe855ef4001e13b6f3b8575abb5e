@@ -1,0 +1,25 @@
+package fruit.details;
+import java.util.*;
+
+public class Tester {
+
+
+	public static void main(String[] args) {
+		System.out.println("Enter how many fruit you want to take as size ?");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		Tester[] FruitBasket = new Tester[n];
+		boolean exit = true;
+		int counter = 0;
+		
+		while(!exit) {
+			System.out.println("Enter 1 fro add mango");
+			System.out.println("Enter 2 for add Orange");
+			System.out.println("Enter 3 for add Apple");
+			System.out.println("Enter 0 for ")
+		}
+		
+	}
+
+}

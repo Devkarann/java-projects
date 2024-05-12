@@ -1,0 +1,14 @@
+package question_5;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Tester {
+	public static void main(String[] args) {
+		Map<Integer, Pet> petList  = new HashMap<>();
+		Map<Integer, Order> orderList = new HashMap<>();
+		Map<String, CustomerL> customerLoginList = new HashMap<>();
+		
+		
+	}
+}

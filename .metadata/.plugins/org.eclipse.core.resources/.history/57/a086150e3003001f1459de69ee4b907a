@@ -1,0 +1,17 @@
+package question_1;
+
+public class validation {
+	public static PenAccount validateAll(String color, String inkcolor, String materialType, int availStock, String updateDate,
+			 String ListingDate, double price, double discount) {
+		
+		Material material = validateMaterial( materialType);
+		return (color, inkcolor, ); 
+		
+	}
+	
+	public static Material validateMaterial(String materialType) throws ErrorMain {
+		return Material.valueOf(materialType.toUpperCase());
+	
+	}
+
+}

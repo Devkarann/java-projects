@@ -1,0 +1,66 @@
+package question_8;
+
+import java.time.LocalDate;
+
+public class Stock {
+	private String id;
+	private String name;
+	private String companyName;
+	private double price;
+	private LocalDate date;
+	private double quan;
+	
+	public Stock(String id, String name, String companyName, double price, LocalDate date, int quan) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.companyName = companyName;
+		this.price = price;
+		this.date = date;
+		this.quan = quan;
+	}
+	
+	@Override
+	public String toString() {
+		return "Stock [id=" + id + ", name=" + name + ", companyName=" + companyName + ", price=" + price + ", date="
+				+ date + ", quan=" + quan + "]";
+	}
+
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getCompanyName() {
+		return companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public LocalDate getDate() {
+		return date;
+	}
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+	public int getQuan() {
+		return quan;
+	}
+	public void setQuan(int quan) {
+		this.quan = quan;
+	}
+	
+}

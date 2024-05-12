@@ -1,0 +1,10 @@
+package fruit.details;
+import fruit.details.*;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Tester FruitBasket = new Mango(null, 0, null, false);
+	}
+
+}

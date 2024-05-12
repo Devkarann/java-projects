@@ -1,0 +1,7 @@
+package lab;
+
+public class validation {
+	public static Phone validateAll(List<Phone>phone , String name, String date , String email ) {
+		
+	}
+}

@@ -1,0 +1,5 @@
+package fruit.details;
+
+public class Mango extends Fruit {
+
+}
